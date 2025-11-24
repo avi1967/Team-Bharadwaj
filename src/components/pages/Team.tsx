@@ -34,7 +34,7 @@ export function Team() {
   { name: 'Sara Bharadwaj', designation: 'Vice Captain', year: '3rd Year', department: 'Electronics and Telecommunication Engineering', category: 'leadership', image: Sara },
 
   // Heads
-  { name: 'Archita Jha', designation: 'Avionics Head', year: '3rd Year', department: 'Electronics Engineering', category: 'heads', image: Aditi },
+  //{ name: 'Archita Jha', designation: 'Avionics Head', year: '3rd Year', department: 'Electronics Engineering', category: 'heads', image: Aditi },
   { name: 'Shreeya Chavan', designation: 'Design Head', year: '3rd Year', department: 'Computer Engineering', category: 'heads', image: Shreeya },
   { name: 'Nandini Sawale', designation: 'Manufacturing Head', year: '3rd Year', department: 'Mechanical Engineering', category: 'heads', image: Nandini },
   { name: 'Piya Shrivastava', designation: 'CFD Head', year: '3rd Year', department: 'Mechanical Engineering', category: 'heads', image: Piya },
