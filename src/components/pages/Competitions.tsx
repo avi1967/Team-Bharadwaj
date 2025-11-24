@@ -23,6 +23,11 @@ import step2 from "@/assets/2.png";
 import step3 from "@/assets/3.png";
 import step4 from "@/assets/4.png";
 import step5 from "@/assets/5.png";
+import plane2023 from "@/assets/2023Plane.png";
+import plane2019award from "@/assets/2019Award.png";
+import plane2021 from "@/assets/2021Plane.png";
+import plane2023award from "@/assets/2023Award.png";
+
 
 export function Competitions() {
   const timelineRef = useRef<HTMLDivElement>(null);
@@ -42,9 +47,7 @@ export function Competitions() {
       location: 'Chennai, India',
       description: '',
       images: [
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+        plane2019award,
       ],
     },
 
@@ -55,9 +58,6 @@ export function Competitions() {
       location: 'Chennai, India',
       description: 'Achieved top ranks despite challenges posed by the pandemic.',
       images: [
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
       ],
     },
 
@@ -68,9 +68,7 @@ export function Competitions() {
       location: 'Chennai, India',
       description: 'Excelled in virtual presentations and design reviews.',
       images: [
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+        plane2021,
       ],
     },
 
@@ -81,9 +79,6 @@ export function Competitions() {
       location: '',
       description: 'Secured first place among many teams with an innovative design.',
       images: [
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
       ],
     },
 
@@ -94,9 +89,6 @@ export function Competitions() {
       location: '',
       description: 'Recognized for innovative drone concepts addressing real-world challenges.',
       images: [
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
       ],
     },
 
@@ -107,9 +99,8 @@ export function Competitions() {
       location: 'Chennai, India',
       description: 'Received recognition for innovative wing design and structural optimization.',
       images: [
-        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+        plane2023,
+        plane2023award,
       ],
     },
     {
@@ -390,7 +381,8 @@ export function Competitions() {
                     whileHover={{ y: -10, scale: 1.05 }}
                     className="mt-8 w-80 bg-gradient-to-br from-slate-900/90 to-purple-900/40 border border-purple-500/30 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl"
                   >
-                    <ImageCarousel images={item.images} />
+                    {item.images.length > 0 && <ImageCarousel images={item.images} />}
+
                     
                     <div className="p-5">
                       <div className="flex items-start justify-between mb-3">
@@ -442,7 +434,8 @@ export function Competitions() {
                     whileHover={{ scale: 1.05, y: -5 }}
                     className="flex-1 bg-gradient-to-br from-slate-900/90 to-purple-900/40 border border-purple-500/30 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl"
                   >
-                    <ImageCarousel images={item.images} />
+                    {item.images.length > 0 && <ImageCarousel images={item.images} />}
+
                     
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
