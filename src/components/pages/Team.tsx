@@ -31,7 +31,7 @@ export function Team() {
   const teamMembers: TeamMember[] = [
   // Leadership
   { name: 'Amitoj Panesar', designation: 'Captain', year: '3rd Year', department: 'Instrumentation and Control Engineering', category: 'leadership', image: Amitoj },
-  { name: 'Sara Bharadwaj', designation: 'Vice Captain', year: '3rd Year', department: 'Electronics and Telecommunication Engineering', category: 'leadership', image: Sara },
+  { name: 'Sara Dange', designation: 'Vice Captain', year: '3rd Year', department: 'Electronics and Telecommunication Engineering', category: 'leadership', image: Sara },
 
   // Heads
   //{ name: 'Archita Jha', designation: 'Avionics Head', year: '3rd Year', department: 'Electronics Engineering', category: 'heads', image: Aditi },
